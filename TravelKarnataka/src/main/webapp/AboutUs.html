@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+   
+  .aboutussec{
+  height:650px;
+ background-image: url('HomeImages/Scroll.jpg');
+  }
+
+   .about-us-sec {
+  .secondary-heading {
+    margin-bottom: 62px;
+  }
+  .secondary-heading {
+  margin-top:50px;
+  color: #000;
+  text-align: center;
+  font-family: Mont-font;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+  .about-card {
+    max-width: 468px;
+    width: 40%;
+    margin : 30px;
+    padding:20px;
+    min-height: 400px;
+    border-radius: 41px;
+    background: #f0e8e1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+    .about-card-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      text-align: center;
+      max-height: 90px;
+      overflow: hidden;
+      transition: all 0.9s ease-in-out;
+      background-color: #F0E8E1;
+      h6 {
+        color: #e98e3a;
+        font-family: Montserrat-font;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      p {
+        transition: all 0.9s ease-in-out;
+        opacity: 0;
+        color: #000;
+      }
+    }
+    &:hover {
+      .about-card-content {
+        max-height: 100vh;
+        p {
+          opacity: 1;
+        }
+      }
+     
+    }
+    
+  }
+  .about-us-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+  </style>
+</head>
+<body>
+
+  
+
+<div class="aboutussec">
+<div class="about-us-sec" id="about-us">
+  <div class="container">
+    <h2 class="secondary-heading">ABOUT US</h2>
+    <div class="about-flex-overflow">
+      <div class="about-us-flex">
+           <div class="about-card">
+          
+            <div class="about-card-content">
+              <h6>OUR STORY</h6>
+              <p>At Travel Karnataka, our journey through Karnataka began with a deep appreciation
+               for the rich heritage, stunning landscapes, and diverse culture of this vibrant state. 
+               From the misty hills of Coorg to the historical marvels of Hampi, our passion lies in curating 
+               journeys that uncover the true essence of Karnataka. Each trip is thoughtfully designed to 
+               connect travelers with the state's soul, ensuring unforgettable memories with every adventure.
+               </p>
+            </div>
+          </div>
+                  <div class="about-card">
+            <div class="about-card-content">
+              <h6>WHY CHOOSE US ?</h6>
+              <p>Explore Karnataka like never before with Travel Karnataka. Our expertise in the state's hidden gems,
+               coupled with personalized itineraries, ensures every journey is unique and fulfilling. We provide an 
+               unmatched blend of local insights, exceptional hospitality, and professional services. With Travel 
+               Karnataka, you're not just visiting Karnataka  you're experiencing it through its culture, cuisine, 
+               and breathtaking sights.</p>
+            </div>
+          </div>
+                  <div class="about-card">
+            <div class="about-card-content">
+              <h6>SERVICES</h6>
+              <p>Discover Karnataka's diverse offerings with our tailored services. Whether it's a serene retreat in
+               Chikmagalur, a cultural exploration of Mysuru, or an adventurous trek in the Western Ghats, we've got 
+               it all. Enjoy customized tours, group trips, and round-the-clock support for a seamless experience. 
+               Our professional media services ensure your Karnataka memories are captured to last a lifetime. With
+                Travel Karnataka, the wonders of Karnataka await you.</p>
+            </div>
+          </div>
+              </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

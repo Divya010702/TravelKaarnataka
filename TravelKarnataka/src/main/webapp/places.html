@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Section</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff;
+        }
+
+        .testimonial {
+             background-image: url('HomeImages/Scroll.jpg');
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .h1-font {
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .cards {
+            width: 90%;
+            margin: auto;
+        }
+
+        .card-test {
+            height: 640px;
+            width: 100%;  
+            border: 2px solid black;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .card-test:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-test img {
+            height: 300px;
+            width: 260px;
+            
+            margin: 0 auto;
+            padding-right: 10px;
+        }
+
+        .card-test p {
+            padding-top: 10px;
+            font-size: 19px;
+            line-height: 1.5;
+            
+        }
+
+        .card-test-name {
+            font-size: 35px;
+            text-align: right;
+            color: rgb(27, 27, 255);
+            margin-top: 15px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <section>
+        <div class="testimonial">
+            <h1 class="h1-font">Discover Karnataka!</h1>
+            <div class="cards">
+                <div class="card-test">
+                    <img src="HomeImages/Bangaluru.jpg" alt="Bangaluru">
+                    <p>A bustling city known as the "Silicon Valley of India," blending modernity with parks like Lalbagh and Cubbon.Don't miss its vibrant nightlife and historical gems like Tipu Sultan's Summer Palace.</p>
+                    
+                </div>
+                <div class="card-test">
+                    <img src="HomeImages/Coorg.jpg" alt="Coorg">
+                    <p>Known as the "Scotland of India," this hill station is famed for coffee plantations and misty hills.A paradise for nature lovers with Abbey Falls and serene trekking trails.</p>
+                   
+                </div>
+                <div class="card-test">
+                    <img src="HomeImages/Hampi.jpg" alt="Hampi">
+                    <p>A UNESCO World Heritage Site with stunning ruins of the Vijayanagara Empire amidst boulder-strewn landscapes.Explore iconic spots like the Virupaksha Temple and the Stone Chariot.</p>
+                </div>
+                <div class="card-test">
+                    <img src="HomeImages/Udupi.jpg" alt="Udupi">
+                    <p>Famous for its Krishna Temple and being the birthplace of Udupi cuisine.Relax on tranquil beaches like Malpe and explore the unique St. Mary's Island.</p>
+                </div>
+                <div class="card-test">
+                    <img src="HomeImages/Mysore.jpg" alt="Mysore">
+                    <p>The cultural capital of Karnataka, famous for its grand Mysore Palace and the Dasara festival.A hub for sandalwood products, silk sarees, and royal heritage.</p>
+                </div>
+                <div class="card-test">
+                    <img src="HomeImages/chikmagalur.jpg" alt="Chikmagalur">
+                    <p>A serene hill station and coffee haven, perfect for trekking and nature exploration.Don't miss the breathtaking views from Mullayanagiri, Karnataka's highest peak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery and Slick Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.cards').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 900,
+                dots: true, // Add dots for navigation
+                arrows: true, // Optionally add arrows for manual navigation
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
